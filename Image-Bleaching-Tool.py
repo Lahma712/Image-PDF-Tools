@@ -6,7 +6,7 @@ host = getpass.getuser()
 def bleach(img): # function that iterates over pixels and turns nearly white pixels completely white
     for y in range(img.size[1]):
         for x in range(img.size[0]):
-            if pix[x,y][0] > 190 and pix[x,y][2] > 190 and pix[x,y][3] > 190 :
+            if pix[x,y][0] > 190 and pix[x,y][1] > 190 and pix[x,y][2] > 190 :
                 pix[x,y] = (255, 255, 255, 255)
     img.save(r"C:\Users\{}\Desktop\ImageBleach\{}".format(host, str(n[:-4]+"-bleached.png")))
 
