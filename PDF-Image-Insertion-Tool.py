@@ -13,9 +13,9 @@ if not os.path.exists(r"C:\Users\{}\Desktop\pdfInsert".format(host)):
 
 print(input("\nPut your .pdf and .png file into the 'pdfInsert' folder on your desktop! Press ENTER to continue."))
 pastePath = r"C:\Users\{}\Desktop\pdfInsert\{}".format(host, [n for n in os.listdir(r"C:\Users\{}\Desktop\pdfInsert".format(host)) if n.endswith(".png") or n.endswith(".jpg") or n.endswith(".jpeg")][0])
-# List comprehension that creates a list that holds the path for the image
+# image path using a list comprehension that searches for the image file
 pdfPath = r"C:\Users\{}\Desktop\pdfInsert\{}".format(host, [n for n in os.listdir(r"C:\Users\{}\Desktop\pdfInsert".format(host)) if n.endswith(".pdf")][0])
-# List comprehension that creates a list that holds the path for the pdf
+# pdf path using a list comprehension that searches for the .pdf file
 
 Mode = input("Keep aspect ratio? y/n: ") # 'yes' utilizes the thumbnail() function and 'no' the resize() function
 page = int(input("PDF page number (f.ex '1' for first page): "))
