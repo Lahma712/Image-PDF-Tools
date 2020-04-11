@@ -4,6 +4,12 @@
 
   This program is very useful for improving the quality of scanned documents. Often, one notices when documents have been scanned as the color of the paper is not completely white ( not (255,255,255) in RGB ). This program takes an image as an input and changes every pixel that's "nearly white" to a complete white ( (255,255,255) in RGB ) while preserving colors. This gets rid of the "scanned look/feel" and makes the document appear much cleaner in comparison.
   
+  ![img](https://imgur.com/zSIr5pv.png)
+  
+  ![img](https://imgur.com/V0fAQxc.png)
+  
+  
+  
 <b> PDF-Image-Insertion-Tool: </b>
 
   This program lets you insert an image (.png/.jpg/.jpeg) into a desired page of a .pdf file. You can chose the width and height (in pixels) of the to be pasted image as well as the X and Y coordinates.
